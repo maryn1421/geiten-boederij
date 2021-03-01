@@ -14,12 +14,12 @@
     <!-- Styles -->
 
     <script type="text/javascript" src="{{ asset('js/modulSwitcher.js') }}" defer></script>
-    <script type="text/javascript" src="{{ asset('js/modules.js') }}" defer></script>
+    <script type="text/javascript" src="{{ asset('js/Costs.js') }}" defer></script>
 
 </head>
 <body >
 <div class="mainPage__Container">
-    <h1>GEITEN BOEDERIJ</h1>
+    <h1 class="mainPage__title">GEITEN BOEDERIJ</h1>
     <div class="mainPage__menu">
         <div class="mainPage__menuItem" onclick="changeSelected('costs')">
             <p>Kiadások</p>
@@ -32,11 +32,9 @@
         </div>
     </div>
     <div id="main-container" class="mainPage__contentContainer">
-        <div class="mainContainer__welcome">
+        <div id="main-child" class="mainContainer__welcome">
             <h4>Szia Pelda, jó hogy újra látunk!</h4>
         </div>
-
-
     </div>
 </div>
 </body>

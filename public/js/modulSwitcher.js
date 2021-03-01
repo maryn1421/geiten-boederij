@@ -2,8 +2,6 @@ let selected = "";
 
 const changeSelected = (newSelection) => {
     setActiveModule(newSelection)
-    fetchCosts().then(res => {
-    })
 }
 
 
@@ -14,6 +12,7 @@ const setActiveModule = async (module) => {
        case "resources" :
            break;
        case  "costs" :
+           new Costs(1).build();
            break;
        case "revenues" :
            break;
