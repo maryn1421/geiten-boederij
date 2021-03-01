@@ -1,0 +1,20 @@
+.mainPage__menu {
+    border: 3px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    color: white;
+}
+
+body {
+    background-color: blueviolet;
+}
+
+
+.mainPage__contentContainer {
+    color: white;
+    border: 4px solid white;
+    border-radius: 10px;
+}
