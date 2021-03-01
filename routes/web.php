@@ -21,4 +21,9 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
+
+
+Route::get("/costs/{user_id}",[CostController::class, 'getCostsByUser']);
+
+
 require __DIR__.'/auth.php';
