@@ -15,7 +15,13 @@ class CreateRevenuesTable extends Migration
     {
         Schema::create('revenues', function (Blueprint $table) {
             $table->id();
+            $table->string("name");
+            $table->integer("price");
+            $table->unsignedBigInteger("user_id");
             $table->timestamps();
+
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+
         });
     }
 

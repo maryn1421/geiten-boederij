@@ -14,8 +14,17 @@ class CreateCostsTable extends Migration
     public function up()
     {
         Schema::create('costs', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
+
+
             $table->id();
+            $table->string("name");
+            $table->integer("price");
+            $table->unsignedBigInteger("user_id");
             $table->timestamps();
+
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+
         });
     }
 
